@@ -56,7 +56,7 @@ export const PokemonList = () => {
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8 justify-items-center">
-          {pokemon.map((pokemon: { id: string; name: string; image: string; type: string }) => (
+          {pokemon.map((pokemon: PokemonCardProps['pokemon']) => (
             <PokemonCard key={pokemon.id} pokemon={pokemon} />
           ))}
         </div>
